@@ -389,6 +389,38 @@ input::placeholder, textarea::placeholder {
   max-width: 900px;
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  align-items: start;
+  gap: var(--space-lg);
+}
+
+.hero-layout .hero-content {
+  max-width: none;
+  min-width: 0;
+}
+
+.hero-portrait {
+  position: sticky;
+  top: calc(var(--space-xl) + var(--space-sm));
+  margin: 0;
+  padding: 0.4rem;
+  border-radius: 28px;
+  background: linear-gradient(145deg, rgba(56, 189, 248, 0.75), rgba(168, 85, 247, 0.55));
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4), 0 0 35px rgba(56, 189, 248, 0.16);
+}
+
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1.15;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 24px;
+  background: #111;
+}
+
 .eyebrow {
   font-family: var(--font-mono);
   color: var(--text-accent);
@@ -903,6 +935,18 @@ footer .footer-links {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .hero-portrait {
+    position: static;
+    width: min(220px, 68vw);
+    order: -1;
+    justify-self: center;
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
