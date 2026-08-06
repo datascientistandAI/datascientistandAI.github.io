@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1840 760" role="img" aria-labelledby="title desc">
+  <title id="title">FILM-BPC Macro Trader V8 architecture</title>
+  <desc id="desc">Market history flows through a sequence encoder, quantile rollout head, zero-parameter mechanical barrier graph, decision heads, ensemble fusion, and trade decision. Regime detection informs the encoder and rollout context. A secondary model also feeds ensemble fusion.</desc>
+
+  <defs>
+    <linearGradient id="canvasGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1624"/>
+      <stop offset="0.55" stop-color="#090d15"/>
+      <stop offset="1" stop-color="#0b0a14"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <filter id="nodeGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b98ad"/>
+    </marker>
+    <marker id="arrowContext" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c6fbd"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1840" height="760" rx="28" fill="url(#canvasGlow)" stroke="#263044" stroke-width="2"/>
+  <rect x="1" y="1" width="1838" height="758" rx="27" fill="url(#grid)"/>
+
+  <text x="56" y="58" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" letter-spacing="2">FILM-BPC MACRO TRADER V8</text>
+  <text x="56" y="88" fill="#7dd3fc" font-family="Fira Code, ui-monospace, monospace" font-size="13" letter-spacing="1.5">FORECAST → MECHANICAL BARRIERS → DECISION</text>
+
+  <!-- Legend -->
+  <rect x="1310" y="42" width="18" height="18" rx="5" fill="#241d4d" stroke="#a78bfa" stroke-width="2"/>
+  <text x="1338" y="57" fill="#dbeafe" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">LEARNED / NEURAL</text>
+  <rect x="1520" y="42" width="18" height="18" rx="5" fill="#252a33" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="1548" y="57" fill="#cbd5e1" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">MECHANICAL / ZERO PARAMS</text>
+
+  <!-- Main flow connectors -->
+  <path d="M 210 370 H 290" fill="none" stroke="#8b98ad" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 480 370 H 540" fill="none" stroke="#8b98ad" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 730 370 H 775" fill="none" stroke="#8b98ad" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 995 370 H 1040" fill="none" stroke="#8b98ad" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 1240 370 H 1310" fill="none" stroke="#8b98ad" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 1490 370 H 1580" fill="none" stroke="#8b98ad" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Regime context, intentionally not part of the straight-line path -->
+  <path d="M 250 166 C 310 166, 330 238, 370 288" fill="none" stroke="#8d7bd1" stroke-width="2.5" stroke-dasharray="9 8" marker-end="url(#arrowContext)"/>
+  <path d="M 250 192 C 400 192, 475 252, 585 300" fill="none" stroke="#8d7bd1" stroke-width="2.5" stroke-dasharray="9 8" marker-end="url(#arrowContext)"/>
+  <text x="285" y="214" fill="#b8a8f3" font-family="Fira Code, ui-monospace, monospace" font-size="12">INFORMS CONTEXT</text>
+  <text x="420" y="252" fill="#b8a8f3" font-family="Fira Code, ui-monospace, monospace" font-size="12">INFORMS CONTEXT</text>
+
+  <!-- Quantile path annotation -->
+  <rect x="690" y="300" width="220" height="28" rx="14" fill="#0b1220" stroke="#334155"/>
+  <text x="800" y="319" text-anchor="middle" fill="#bae6fd" font-family="Fira Code, ui-monospace, monospace" font-size="12">5 QUANTILE PATHS · 40 STEPS</text>
+
+  <!-- Nodes -->
+  <g filter="url(#nodeGlow)">
+    <polygon points="52,320 210,320 190,420 32,420" fill="#141a25" stroke="#64748b" stroke-width="3"/>
+    <rect x="290" y="320" width="190" height="100" rx="14" fill="#241d4d" stroke="#a78bfa" stroke-width="3"/>
+    <rect x="540" y="320" width="190" height="100" rx="14" fill="#241d4d" stroke="#a78bfa" stroke-width="3"/>
+    <rect x="775" y="320" width="220" height="100" rx="14" fill="#252a33" stroke="#94a3b8" stroke-width="3" stroke-dasharray="12 8"/>
+    <rect x="1040" y="320" width="200" height="100" rx="14" fill="#162c46" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="1040" y="135" width="200" height="100" rx="14" fill="#241d4d" stroke="#a78bfa" stroke-width="3"/>
+    <polygon points="1400,280 1490,370 1400,460 1310,370" fill="#162c46" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="1580" y="320" width="205" height="100" rx="50" fill="#162c46" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="32" y="135" width="218" height="100" rx="14" fill="#241d4d" stroke="#a78bfa" stroke-width="3"/>
+  </g>
+
+  <g fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">
+    <text x="121" y="366"><tspan x="121" dy="0">MARKET</tspan><tspan x="121" dy="22">HISTORY</tspan></text>
+    <text x="385" y="375">SEQUENCE ENCODER</text>
+    <text x="635" y="375">ROLLOUTHEAD</text>
+    <text x="885" y="365"><tspan x="885" dy="0">MECHANICAL BARRIER</tspan><tspan x="885" dy="22">GRAPH</tspan></text>
+    <text x="1140" y="375">DECISION HEADS</text>
+    <text x="1140" y="190">SECONDARY MODEL</text>
+    <text x="1400" y="364"><tspan x="1400" dy="0">ENSEMBLE</tspan><tspan x="1400" dy="22">FUSION</tspan></text>
+    <text x="1682" y="375">TRADE DECISION</text>
+    <text x="141" y="178"><tspan x="141" dy="0">REGIME DETECTION</tspan><tspan x="141" dy="22">(HMM)</tspan></text>
+  </g>
+
+  <!-- Zero-parameter badge -->
+  <rect x="835" y="440" width="100" height="30" rx="15" fill="#252a33" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="885" y="460" text-anchor="middle" fill="#e2e8f0" font-family="Fira Code, ui-monospace, monospace" font-size="12" font-weight="600">0 PARAMS</text>
+
+  <!-- Caption -->
+  <line x1="56" y1="535" x2="1785" y2="535" stroke="#263044" stroke-width="1"/>
+  <text x="920" y="590" text-anchor="middle" fill="#e2e8f0" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600">Forecast and decision logic are architecturally separate — the mechanical layer has zero learned parameters.</text>
+  <text x="920" y="625" text-anchor="middle" fill="#7c8aa1" font-family="Fira Code, ui-monospace, monospace" font-size="12">The learned model forecasts; the mechanical layer enforces explicit barrier logic.</text>
+</svg>

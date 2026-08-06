@@ -1,0 +1,6 @@
+# Local packaging and maintenance files are not part of the public portfolio.
+portfolio_source.tar.gz
+theme_update.py
+
+# Retained locally; the homepage uses the compact summary chart instead.
+assets/continual-learning-forgetting-curves.png

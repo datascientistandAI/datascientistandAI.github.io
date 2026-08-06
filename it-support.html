@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT & Application Support | Boris Emakam Garcial</title>
+    <meta name="description" content="Troubleshooting, user support, POS systems, documentation, escalation, Linux, and networking — front-line application support work by Boris Emakam Garcial.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="IT & Application Support | Boris Emakam Garcial">
+    <meta property="og:description" content="Troubleshooting, user support, POS systems, documentation, escalation, Linux, and networking.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-outline" aria-hidden="true"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="brand interactive-element">
+                <i data-lucide="terminal" style="color: var(--text-accent);"></i>
+                Boris Emakam Garcial
+            </a>
+            <div class="nav-links">
+                <a href="it-support.html" class="interactive-element" style="color: var(--text-accent);">IT Support</a>
+                <a href="software.html" class="interactive-element">Software Dev</a>
+                <a href="research.html" class="interactive-element">ML Research</a>
+                <button id="theme-toggle" class="btn btn-outline interactive-element" aria-label="Toggle Theme" style="padding: 0.5rem; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border-color); margin-left: 1rem;">
+                    <i data-lucide="sun" id="theme-icon" size="18"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 60vh; padding-top: calc(var(--space-xl) + var(--space-xl));">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="animate-on-scroll stagger-1 eyebrow interactive-element">
+                        <i data-lucide="monitor-smartphone" size="16"></i> Front-Line Problem Solving
+                    </div>
+                    <h1 class="animate-on-scroll stagger-2">IT & Application Support</h1>
+                    <p class="hero-lede animate-on-scroll stagger-3" style="font-size: 1.25rem; color: var(--text-heading); max-width: 800px; line-height: 1.8; margin-bottom: 2rem;">
+                        Extensive experience troubleshooting users, workstations, POS environments, and web-based systems. I don't just clear tickets; I investigate the underlying application cause, document the resolution, and escalate with useful evidence.
+                    </p>
+                    <div class="project-tags animate-on-scroll stagger-4" style="margin-bottom: var(--space-md);">
+                        <span class="tag interactive-element"><i data-lucide="tool" size="14"></i> Troubleshooting</span>
+                        <span class="tag interactive-element"><i data-lucide="users" size="14"></i> User Support</span>
+                        <span class="tag interactive-element"><i data-lucide="shopping-cart" size="14"></i> POS Systems</span>
+                        <span class="tag interactive-element"><i data-lucide="file-text" size="14"></i> Documentation</span>
+                        <span class="tag interactive-element"><i data-lucide="alert-circle" size="14"></i> Escalation</span>
+                        <span class="tag interactive-element"><i data-lucide="terminal-square" size="14"></i> Linux</span>
+                        <span class="tag interactive-element"><i data-lucide="network" size="14"></i> Networking</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Featured Support Projects</h2>
+                <div class="grid-2">
+                    <div class="card project-card animate-on-scroll stagger-1 interactive-element" style="grid-column: 1 / -1; max-width: 900px; margin: 0 auto;">
+                        <h3>Global Help Desk System</h3>
+                        <p class="eyebrow" style="color: var(--text-secondary); background: transparent; padding: 0; border: none; letter-spacing: 0;">System Design & Implementation</p>
+                        
+                        <div class="project-case-study" style="margin-top: var(--space-sm);">
+                            <div class="grid-2" style="gap: var(--space-md);">
+                                <div>
+                                    <h4><i data-lucide="life-buoy" size="18"></i> The System</h4>
+                                    <p>Designed a support workflow covering ticket intake, categorization, assignment, status tracking, resolution notes, escalation, and administrator oversight.</p>
+                                </div>
+                                <div>
+                                    <h4><i data-lucide="activity" size="18"></i> Impact</h4>
+                                    <p>Structured the system around traceable incidents and repeatable troubleshooting rather than informal issue handling, drastically improving resolution times and accountability.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">System Design</span>
+                            <span class="tag">Ticketing</span>
+                            <span class="tag">Workflow Automation</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="https://github.com/datascientistandAI/help-desk-system" target="_blank" rel="noreferrer" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i data-lucide="github" size="16"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Boris Emakam Garcial</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

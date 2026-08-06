@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 840" role="img" aria-labelledby="title desc">
+  <title id="title">Trading Data Plane architecture</title>
+  <desc id="desc">Six concurrent data sources feed a DuckDB feature store, a point-in-time-correct snapshot builder, five mandatory validation gates, and a training-ready snapshot.</desc>
+
+  <defs>
+    <linearGradient id="canvasGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1624"/>
+      <stop offset="0.55" stop-color="#090d15"/>
+      <stop offset="1" stop-color="#0b0a14"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <filter id="nodeGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b98ad"/>
+    </marker>
+    <marker id="arrowWorker" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowGate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="2200" height="840" rx="28" fill="url(#canvasGlow)" stroke="#263044" stroke-width="2"/>
+  <rect x="1" y="1" width="2198" height="838" rx="27" fill="url(#grid)"/>
+
+  <text x="56" y="58" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" letter-spacing="2">TRADING DATA PLANE</text>
+  <text x="56" y="88" fill="#7dd3fc" font-family="Fira Code, ui-monospace, monospace" font-size="13" letter-spacing="1.5">CONCURRENT INGESTION → POINT-IN-TIME SNAPSHOT → VALIDATED TRAINING DATA</text>
+
+  <!-- Legend -->
+  <rect x="1290" y="42" width="18" height="18" rx="5" fill="#17233a" stroke="#38bdf8" stroke-width="2"/>
+  <text x="1318" y="57" fill="#dbeafe" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">CONCURRENT WORKER</text>
+  <polygon points="1538,42 1547,51 1538,60 1529,51" fill="#2a2348" stroke="#a78bfa" stroke-width="2"/>
+  <text x="1560" y="57" fill="#ddd6fe" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">MANDATORY GATE</text>
+
+  <!-- Source lane label -->
+  <text x="58" y="124" fill="#7c8aa1" font-family="Fira Code, ui-monospace, monospace" font-size="12" letter-spacing="1.2">PARALLEL SOURCES</text>
+
+  <!-- Converging worker arrows -->
+  <path d="M 278 166 C 330 166, 345 350, 390 380" fill="none" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrowWorker)"/>
+  <path d="M 278 246 C 330 246, 350 340, 390 370" fill="none" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrowWorker)"/>
+  <path d="M 278 326 C 330 326, 355 350, 390 365" fill="none" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrowWorker)"/>
+  <path d="M 278 406 C 330 406, 355 398, 390 395" fill="none" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrowWorker)"/>
+  <path d="M 278 486 C 330 486, 350 430, 390 410" fill="none" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrowWorker)"/>
+  <path d="M 278 566 C 330 566, 345 450, 390 425" fill="none" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrowWorker)"/>
+
+  <!-- Main pipeline arrows -->
+  <path d="M 630 395 H 690" fill="none" stroke="#8b98ad" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 930 395 H 1170" fill="none" stroke="#a78bfa" stroke-width="3" marker-end="url(#arrowGate)"/>
+  <path d="M 1310 395 H 1330" fill="none" stroke="#a78bfa" stroke-width="3" marker-end="url(#arrowGate)"/>
+  <path d="M 1470 395 H 1490" fill="none" stroke="#a78bfa" stroke-width="3" marker-end="url(#arrowGate)"/>
+  <path d="M 1630 395 H 1650" fill="none" stroke="#a78bfa" stroke-width="3" marker-end="url(#arrowGate)"/>
+  <path d="M 1790 395 H 1810" fill="none" stroke="#a78bfa" stroke-width="3" marker-end="url(#arrowGate)"/>
+  <path d="M 1950 395 H 1990" fill="none" stroke="#34d399" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Worker boxes: deliberately identical -->
+  <g filter="url(#nodeGlow)">
+    <rect x="48" y="136" width="230" height="60" rx="12" fill="#17233a" stroke="#38bdf8" stroke-width="2.5"/>
+    <rect x="48" y="216" width="230" height="60" rx="12" fill="#17233a" stroke="#38bdf8" stroke-width="2.5"/>
+    <rect x="48" y="296" width="230" height="60" rx="12" fill="#17233a" stroke="#38bdf8" stroke-width="2.5"/>
+    <rect x="48" y="376" width="230" height="60" rx="12" fill="#17233a" stroke="#38bdf8" stroke-width="2.5"/>
+    <rect x="48" y="456" width="230" height="60" rx="12" fill="#17233a" stroke="#38bdf8" stroke-width="2.5"/>
+    <rect x="48" y="536" width="230" height="60" rx="12" fill="#17233a" stroke="#38bdf8" stroke-width="2.5"/>
+
+    <rect x="390" y="345" width="240" height="100" rx="16" fill="#1c2740" stroke="#60a5fa" stroke-width="3"/>
+    <rect x="690" y="345" width="240" height="100" rx="16" fill="#1c2740" stroke="#60a5fa" stroke-width="3"/>
+
+    <!-- Five checkpoint diamonds -->
+    <polygon points="1240,325 1310,395 1240,465 1170,395" fill="#2a2348" stroke="#a78bfa" stroke-width="3"/>
+    <polygon points="1400,325 1470,395 1400,465 1330,395" fill="#2a2348" stroke="#a78bfa" stroke-width="3"/>
+    <polygon points="1560,325 1630,395 1560,465 1490,395" fill="#2a2348" stroke="#a78bfa" stroke-width="3"/>
+    <polygon points="1720,325 1790,395 1720,465 1650,395" fill="#2a2348" stroke="#a78bfa" stroke-width="3"/>
+    <polygon points="1880,325 1950,395 1880,465 1810,395" fill="#2a2348" stroke="#a78bfa" stroke-width="3"/>
+  </g>
+
+  <!-- Worker labels -->
+  <g fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+    <text x="163" y="172">PRICE FEED</text>
+    <text x="163" y="252">MACRO (FRED)</text>
+    <text x="163" y="332">NEWS (GDELT)</text>
+    <text x="163" y="412">SENTIMENT (DNSI)</text>
+    <text x="163" y="492">POSITIONING (COT)</text>
+    <text x="163" y="572">EVENT CALENDAR</text>
+    <text x="510" y="383"><tspan x="510" dy="0">DUCKDB FEATURE</tspan><tspan x="510" dy="22">STORE</tspan></text>
+    <text x="810" y="378"><tspan x="810" dy="0">SNAPSHOT BUILDER</tspan><tspan x="810" dy="22" fill="#bae6fd" font-size="12" font-family="Fira Code, ui-monospace, monospace">POINT-IN-TIME CORRECT</tspan></text>
+  </g>
+
+  <!-- Gate heading and check motifs -->
+  <text x="1560" y="270" text-anchor="middle" fill="#c4b5fd" font-family="Fira Code, ui-monospace, monospace" font-size="13" font-weight="600" letter-spacing="1.5">5 VALIDATION GATES · ALL MUST PASS</text>
+  <g fill="none" stroke="#ddd6fe" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 1230 390 l 7 7 l 13 -15"/><path d="M 1390 390 l 7 7 l 13 -15"/>
+    <path d="M 1550 390 l 7 7 l 13 -15"/><path d="M 1710 390 l 7 7 l 13 -15"/>
+    <path d="M 1870 390 l 7 7 l 13 -15"/>
+  </g>
+  <g fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="1240" y="505">COVERAGE</text>
+    <text x="1400" y="505"><tspan x="1400" dy="0">POINT-IN-</tspan><tspan x="1400" dy="16">TIME</tspan></text>
+    <text x="1560" y="505">SCHEMA</text>
+    <text x="1720" y="505"><tspan x="1720" dy="0">REPLAY</tspan><tspan x="1720" dy="16">PARITY</tspan></text>
+    <text x="1880" y="505">RESILIENCE</text>
+  </g>
+
+  <!-- Output after the complete gate chain -->
+  <rect x="1990" y="345" width="170" height="100" rx="16" fill="#12352f" stroke="#34d399" stroke-width="3"/>
+  <text x="2075" y="383" text-anchor="middle" fill="#ecfdf5" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="800"><tspan x="2075" dy="0">TRAINING-READY</tspan><tspan x="2075" dy="21">SNAPSHOT</tspan></text>
+
+  <!-- Caption -->
+  <line x1="56" y1="710" x2="2144" y2="710" stroke="#263044" stroke-width="1"/>
+  <text x="1100" y="765" text-anchor="middle" fill="#e2e8f0" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600">Every value carries an available_at timestamp — nothing is queryable before it was actually knowable.</text>
+  <text x="1100" y="798" text-anchor="middle" fill="#7c8aa1" font-family="Fira Code, ui-monospace, monospace" font-size="12">The data plane protects point-in-time integrity before any model sees a training example.</text>
+</svg>

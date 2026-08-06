@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boris Emakam Garcial | Professional Portfolio</title>
+    <meta name="description" content="AI-augmented technical professional connecting IT support, software development, automation, and machine learning.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Boris Emakam Garcial | Professional Portfolio">
+    <meta property="og:description" content="AI-augmented technical professional connecting IT support, software development, automation, and machine learning.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Boris Emakam Garcial | Professional Portfolio">
+    <meta name="twitter:description" content="AI-augmented technical professional connecting IT support, software development, automation, and machine learning.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Boris Emakam Garcial",
+      "jobTitle": "AI-Augmented Technical Professional",
+      "url": "index.html",
+      "sameAs": [
+        "https://github.com/datascientistandAI",
+        "https://www.linkedin.com/in/boris-emakam-b77974290/"
+      ]
+    }
+    </script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css?v=20260805-portfolio-refresh">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-outline" aria-hidden="true"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="brand interactive-element">
+                <i data-lucide="terminal" style="color: var(--text-accent);"></i>
+                Boris Emakam Garcial
+            </a>
+            <div class="nav-links">
+                <a href="it-support.html" class="interactive-element">IT Support</a>
+                <a href="software.html" class="interactive-element">Software Dev</a>
+                <a href="research.html" class="interactive-element">ML Research</a>
+                <button id="theme-toggle" class="btn btn-outline interactive-element" aria-label="Toggle Theme" style="padding: 0.5rem; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border-color);">
+                    <i data-lucide="sun" id="theme-icon" size="18"></i>
+                </button>
+                <a href="resume.pdf" class="interactive-element" style="color: var(--text-accent); font-weight: 600;" download>Résumé</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="top" style="min-height: auto; padding-top: calc(var(--space-xl) + var(--space-md)); padding-bottom: var(--space-lg);">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="animate-on-scroll stagger-1 eyebrow interactive-element">
+                        <span class="status-dot"></span> Available for Opportunities
+                    </div>
+                    <h1 class="animate-on-scroll stagger-2" style="font-size: clamp(2.5rem, 5vw, 4.5rem);">
+                        AI-Augmented Technical Professional.
+                    </h1>
+                    <p class="hero-lede animate-on-scroll stagger-3" style="font-size: 1.25rem; color: var(--text-heading); max-width: 800px; margin-bottom: 2rem; line-height: 1.8;">
+                        Bridging the gap between front-line user support, robust backend software engineering, and advanced machine learning research.
+                    </p>
+                    <div class="hero-actions animate-on-scroll stagger-4">
+                        <a href="#featured-projects" class="btn btn-primary interactive-element">
+                            <i data-lucide="folder-kanban"></i>
+                            View Projects
+                        </a>
+                        <a href="resume.pdf" target="_blank" class="btn btn-outline interactive-element" download>
+                            <i data-lucide="download-cloud"></i>
+                            Download Résumé
+                        </a>
+                        <a href="https://github.com/datascientistandAI" target="_blank" rel="noreferrer" class="btn btn-outline interactive-element">
+                            <i data-lucide="github"></i>
+                            GitHub Profile
+                        </a>
+                    </div>
+                    <div class="hero-proof animate-on-scroll stagger-4" aria-label="Portfolio highlights">
+                        <span><strong>6</strong> live data workers</span>
+                        <span><strong>5</strong> validation gates</span>
+                        <span><strong>279</strong> walk-forward folds</span>
+                    </div>
+                    <aside class="research-highlight animate-on-scroll stagger-4" aria-label="Machine learning research highlight">
+                        <img src="assets/continual-learning-summary.png" class="research-highlight-chart" alt="Continual-learning summary chart showing 79 percent final accuracy and 3.5 percent MNIST forgetting for the protected controller" loading="lazy" style="display: block; width: 500px; max-width: 100%; height: auto; margin: 0 auto;">
+                        <div class="research-highlight-copy">
+                            <span>ML Research Highlight</span>
+                            <strong>79.0% final accuracy and 3.5% MNIST forgetting, versus 58.7% and 40.3% for the unprotected baseline.</strong>
+                        </div>
+                        <div class="research-highlight-actions">
+                            <a href="research.html" class="interactive-element">View research <i data-lucide="arrow-right" size="15"></i></a>
+                            <a href="https://github.com/datascientistandAI/continual-learning-controller" target="_blank" rel="noreferrer" class="interactive-element"><i data-lucide="github" size="15"></i> GitHub</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" style="padding-top: var(--space-md); padding-bottom: var(--space-xl);">
+            <div class="container">
+                <div class="card animate-on-scroll stagger-1 interactive-element" style="padding: var(--space-lg); background: var(--bg-card); position: relative; border-radius: 24px; max-width: 850px; margin: 0 auto; margin-bottom: var(--space-xl);">
+                    
+                    <div style="display: flex; align-items: center; margin-bottom: var(--space-lg);">
+                        <div style="width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--text-accent), #a855f7); display: flex; align-items: center; justify-content: center; color: #fff; box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);">
+                            <i data-lucide="user" size="24"></i>
+                        </div>
+                        <div style="margin-left: 1rem;">
+                            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-heading); margin: 0;">About Me</h3>
+                            <p style="color: var(--text-secondary); margin: 0; font-size: 0.95rem;">My journey & philosophy</p>
+                        </div>
+                    </div>
+
+                    <blockquote style="position: relative; padding-left: 1.5rem; margin-bottom: var(--space-lg); font-size: 1.15rem; line-height: 1.8; color: var(--text-heading); font-style: italic;">
+                        <span style="position: absolute; left: 0; top: 0; bottom: 0; width: 4px; border-radius: 4px; background: linear-gradient(to bottom, var(--text-accent), #a855f7);"></span>
+                        "I am a Computer Scientist deeply focused on machine learning systems at the intersection of AI and financial markets. My work revolves around building robust forecasting models, architecting trading decision logic, and engineering the resilient data infrastructure that feeds them. I specialize in time-series forecasting, reinforcement learning for trading, and creating mechanical decision layers built on top of learned forecasts."
+                    </blockquote>
+
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-lg); border-top: 1px solid var(--border-color); padding-top: var(--space-md);">
+                        <div>
+                            <div style="display: flex; gap: 4px; margin-bottom: 0.5rem;">
+                                <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--text-accent); animation: glowPulse 2s infinite;"></span>
+                                <span style="width: 8px; height: 8px; border-radius: 50%; background: #a855f7; animation: glowPulse 2s infinite 0.2s;"></span>
+                                <span style="width: 8px; height: 8px; border-radius: 50%; background: #ec4899; animation: glowPulse 2s infinite 0.4s;"></span>
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 0.95rem; display: flex; flex-wrap: wrap; gap: 1rem;">
+                                <span style="display: flex; align-items: center; gap: 0.25rem;"><i data-lucide="terminal" size="14"></i> Developer</span>
+                                <span style="display: flex; align-items: center; gap: 0.25rem;"><i data-lucide="cpu" size="14"></i> Data Architect</span>
+                                <span style="display: flex; align-items: center; gap: 0.25rem;"><i data-lucide="trending-up" size="14"></i> Quant</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="project-tags">
+                                <span class="tag interactive-element">Python</span>
+                                <span class="tag interactive-element">PyTorch</span>
+                                <span class="tag interactive-element">DuckDB</span>
+                                <span class="tag interactive-element">C++</span>
+                                <span class="tag interactive-element">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-projects" class="projects-section" style="padding-top: var(--space-lg); padding-bottom: var(--space-xl);">
+            <div class="container">
+                <div class="text-center animate-on-scroll" style="margin-bottom: var(--space-xl);">
+                    <div class="eyebrow" style="display: inline-flex;"><i data-lucide="folder-kanban" size="16"></i> Selected Work</div>
+                    <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-top: var(--space-sm);">Featured Projects</h2>
+                    <p style="max-width: 720px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7;">Two examples of how I build reliable systems: production-minded data infrastructure and rigorous machine-learning research.</p>
+                </div>
+
+                <div class="grid-2">
+                    <article class="card project-card animate-on-scroll stagger-1 interactive-element">
+                        <img class="large-card-image" src="assets/trading-data-plane.svg" alt="Architecture diagram of the Trading Data Plane" loading="lazy">
+                        <div class="eyebrow" style="align-self: flex-start;">Software & Data Infrastructure</div>
+                        <h3>Trading Data Plane</h3>
+                        <p>A live, multi-source FX data platform that normalizes six data sources into a point-in-time-correct DuckDB feature store.</p>
+                        <p style="color: var(--text-heading); font-weight: 600; margin-bottom: var(--space-sm);">6 independent workers · 5 validation gates · audited ingestion</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span><span class="tag">DuckDB</span><span class="tag">SQLite</span><span class="tag">APIs</span><span class="tag">Testing</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/datascientistandAI/trading-data-plane" target="_blank" rel="noreferrer" class="btn btn-outline interactive-element"><i data-lucide="github" size="16"></i> View Project</a>
+                            <a href="software.html" class="btn btn-outline interactive-element">Software details <i data-lucide="arrow-right" size="16"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card project-card animate-on-scroll stagger-2 interactive-element">
+                        <div class="workflow-preview" aria-label="Document Intelligence Workflow: requirements flow through extraction and validation to export">
+                            <span><i data-lucide="clipboard-list" size="20"></i> Requirements</span><i data-lucide="arrow-right" size="18"></i><span><i data-lucide="scan-text" size="20"></i> Extract</span><i data-lucide="arrow-right" size="18"></i><span><i data-lucide="shield-check" size="20"></i> Validate</span><i data-lucide="arrow-right" size="18"></i><span><i data-lucide="file-output" size="20"></i> Export</span>
+                        </div>
+                        <div class="eyebrow" style="align-self: flex-start;">Business Application</div>
+                        <h3>Document Intelligence Workflow</h3>
+                        <p>A Django-based internal workflow that turns business requirements into structured BRS/SRS documents.</p>
+                        <p style="color: var(--text-heading); font-weight: 600; margin-bottom: var(--space-sm);">Azure document extraction · authentication · activity logging · Word/PDF export</p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span><span class="tag">Python</span><span class="tag">Azure</span><span class="tag">APIs</span><span class="tag">SQL</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/datascientistandAI/design-assist" target="_blank" rel="noreferrer" class="btn btn-outline interactive-element"><i data-lucide="github" size="16"></i> View Project</a>
+                            <a href="software.html" class="btn btn-outline interactive-element">Read case study <i data-lucide="arrow-right" size="16"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" style="padding-top: var(--space-md); padding-bottom: var(--space-xl);">
+            <div class="container">
+                <div class="text-center animate-on-scroll stagger-1" style="margin-bottom: var(--space-xl);">
+                    <div style="display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid rgba(56, 189, 248, 0.2); background: linear-gradient(to right, rgba(56, 189, 248, 0.1), rgba(168, 85, 247, 0.1)); padding: 0.5rem 1rem; color: var(--text-accent); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                        <span style="position: relative; display: flex; width: 8px; height: 8px; margin-right: 0.5rem;">
+                            <span style="position: absolute; width: 100%; height: 100%; border-radius: 50%; background: var(--text-accent); opacity: 0.75; animation: glowPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;"></span>
+                            <span style="position: relative; width: 8px; height: 8px; border-radius: 50%; background: var(--text-accent);"></span>
+                        </span>
+                        Technical Expertise
+                    </div>
+                    <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 1rem; color: var(--text-heading);">
+                        Skills & Technologies<br>
+                        <span style="display: block; font-size: clamp(1.5rem, 3vw, 2.5rem); background: var(--text-heading-gradient); -webkit-background-clip: text; color: transparent; margin-top: 0.5rem;">I Work With 🛠️</span>
+                    </h2>
+                    <p style="color: var(--text-secondary); max-width: 800px; margin: 0 auto; font-size: 1.15rem; line-height: 1.8;">
+                        From highly concurrent data infrastructure to state-of-the-art model training frameworks, here is my technical toolkit.
+                    </p>
+                    <p class="what-i-build" style="max-width: 760px; margin: var(--space-md) auto 0;">What I build: auditable data pipelines, business-facing automation, and machine-learning systems with validation built in.</p>
+                </div>
+
+                <div class="grid-2 skills-grid">
+                    <!-- Languages -->
+                    <div class="card animate-on-scroll stagger-2 interactive-element" style="padding: var(--space-lg); background: var(--bg-card); position: relative; border-radius: 24px;">
+                        <div style="display: flex; align-items: center; margin-bottom: var(--space-md);">
+                            <div style="width: 56px; height: 56px; border-radius: 12px; background: linear-gradient(135deg, var(--text-accent), #a855f7); display: flex; align-items: center; justify-content: center; color: #fff; box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);">
+                                <i data-lucide="code" size="28"></i>
+                            </div>
+                            <div style="margin-left: 1.25rem;">
+                                <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-heading); margin: 0;">Programming Languages</h3>
+                                <p style="color: var(--text-secondary); margin: 0; font-size: 0.95rem; margin-top: 0.25rem;">3 core technologies</p>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1rem;">
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(56, 189, 248, 0.05); border: 1px solid rgba(56, 189, 248, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Python</div>
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(168, 85, 247, 0.05); border: 1px solid rgba(168, 85, 247, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">C++</div>
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(236, 72, 153, 0.05); border: 1px solid rgba(236, 72, 153, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">SQL</div>
+                        </div>
+                    </div>
+
+                    <!-- Web & Backend -->
+                    <div class="card animate-on-scroll stagger-3 interactive-element" style="padding: var(--space-lg); background: var(--bg-card); position: relative; border-radius: 24px;">
+                        <div style="display: flex; align-items: center; margin-bottom: var(--space-md);">
+                            <div style="width: 56px; height: 56px; border-radius: 12px; background: linear-gradient(135deg, #a855f7, #ec4899); display: flex; align-items: center; justify-content: center; color: #fff; box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);">
+                                <i data-lucide="server" size="28"></i>
+                            </div>
+                            <div style="margin-left: 1.25rem;">
+                                <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-heading); margin: 0;">Web & Backend</h3>
+                                <p style="color: var(--text-secondary); margin: 0; font-size: 0.95rem; margin-top: 0.25rem;">3 core technologies</p>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1rem;">
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(168, 85, 247, 0.05); border: 1px solid rgba(168, 85, 247, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Django</div>
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(236, 72, 153, 0.05); border: 1px solid rgba(236, 72, 153, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">PHP</div>
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(245, 158, 11, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">JavaScript</div>
+                        </div>
+                    </div>
+
+                    <!-- AI & ML -->
+                    <div class="card animate-on-scroll stagger-4 interactive-element" style="padding: var(--space-lg); background: var(--bg-card); position: relative; border-radius: 24px;">
+                        <div style="display: flex; align-items: center; margin-bottom: var(--space-md);">
+                            <div style="width: 56px; height: 56px; border-radius: 12px; background: linear-gradient(135deg, #10b981, #3b82f6); display: flex; align-items: center; justify-content: center; color: #fff; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);">
+                                <i data-lucide="cpu" size="28"></i>
+                            </div>
+                            <div style="margin-left: 1.25rem;">
+                                <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-heading); margin: 0;">AI / Machine Learning</h3>
+                                <p style="color: var(--text-secondary); margin: 0; font-size: 0.95rem; margin-top: 0.25rem;">3 core frameworks</p>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1rem;">
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">PyTorch</div>
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">LightGBM</div>
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Scikit-Learn</div>
+                        </div>
+                    </div>
+
+                    <!-- Data & Architecture -->
+                    <div class="card animate-on-scroll stagger-4 interactive-element" style="padding: var(--space-lg); background: var(--bg-card); position: relative; border-radius: 24px;">
+                        <div style="display: flex; align-items: center; margin-bottom: var(--space-md);">
+                            <div style="width: 56px; height: 56px; border-radius: 12px; background: linear-gradient(135deg, #f59e0b, #ef4444); display: flex; align-items: center; justify-content: center; color: #fff; box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);">
+                                <i data-lucide="database" size="28"></i>
+                            </div>
+                            <div style="margin-left: 1.25rem;">
+                                <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-heading); margin: 0;">Data & Architecture</h3>
+                                <p style="color: var(--text-secondary); margin: 0; font-size: 0.95rem; margin-top: 0.25rem;">Infrastructure & Viz</p>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1rem;">
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(245, 158, 11, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">DuckDB</div>
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Tableau</div>
+                            <div style="padding: 1rem; border-radius: 12px; background: rgba(139, 92, 246, 0.05); border: 1px solid rgba(139, 92, 246, 0.2); text-align: center; color: var(--text-heading); font-weight: 500; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Pipelines</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="expertise" style="padding-top: var(--space-xl);">
+            <div class="container">
+                <div class="grid-3">
+                    
+                    <!-- IT Support Link -->
+                    <a href="it-support.html" class="card interactive-element" style="text-decoration: none;">
+                        <div class="card-icon">
+                            <i data-lucide="monitor-smartphone" size="28"></i>
+                        </div>
+                        <h3>IT & Application Support</h3>
+                        <p style="margin-bottom: var(--space-md);">Troubleshooting, user support, POS issues, documentation, escalation, Linux, and networking.</p>
+                        <span class="btn btn-outline" style="width: 100%; border-color: rgba(255,255,255,0.1);">Explore IT Support <i data-lucide="arrow-right" size="16"></i></span>
+                    </a>
+
+                    <!-- Software Dev Link -->
+                    <a href="software.html" class="card interactive-element" style="text-decoration: none;">
+                        <div class="card-icon">
+                            <i data-lucide="code" size="28"></i>
+                        </div>
+                        <h3>Software & Automation</h3>
+                        <p style="margin-bottom: var(--space-md);">Django, Python, PHP, JavaScript, APIs, SQL, authentication, validation, logging, and document workflows.</p>
+                        <span class="btn btn-outline" style="width: 100%; border-color: rgba(255,255,255,0.1);">Explore Software Dev <i data-lucide="arrow-right" size="16"></i></span>
+                    </a>
+
+                    <!-- ML Research Link -->
+                    <a href="research.html" class="card interactive-element" style="text-decoration: none;">
+                        <div class="card-icon">
+                            <i data-lucide="brain-circuit" size="28"></i>
+                        </div>
+                        <h3>ML / AI Research</h3>
+                        <p style="margin-bottom: var(--space-md);">Time-series ML, LightGBM, Transformers, reinforcement learning, leakage controls, and trading algorithms.</p>
+                        <span class="btn btn-outline" style="width: 100%; border-color: rgba(255,255,255,0.1);">Explore ML Research <i data-lucide="arrow-right" size="16"></i></span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact-section" style="padding-bottom: var(--space-xl);">
+            <div class="container animate-on-scroll text-center" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="eyebrow"><i data-lucide="mail"></i> Get In Touch</div>
+                <h2 style="font-size: clamp(2rem, 5vw, 4rem);">Have a technical problem<br>worth solving?</h2>
+                <a href="https://www.linkedin.com/in/boris-emakam-b77974290/" target="_blank" rel="noreferrer" class="btn btn-primary interactive-element" style="padding: 1rem 2.5rem; font-size: 1.1rem; margin-top: var(--space-sm);">
+                    Contact me on LinkedIn <i data-lucide="external-link" size="18"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-section" style="padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
+            <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="animate-on-scroll stagger-1" style="font-size: 2.5rem;">Let's Connect</h2>
+                <p class="animate-on-scroll stagger-2" style="color: var(--text-secondary); margin-bottom: var(--space-lg); font-size: 1.1rem; margin-left: auto; margin-right: auto; max-width: 600px;">
+                    Currently based in <strong id="user-location-strong" style="color: var(--text-heading);">Regina, Saskatchewan</strong>.<br>
+                    Interested in collaboration, research, or engineering roles.
+                </p>
+
+                <div class="card contact-card animate-on-scroll stagger-3" style="text-align: left; background: var(--bg-card); padding: var(--space-lg); border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                    <div style="display: flex; flex-direction: column; gap: var(--space-md); margin-bottom: var(--space-lg);">
+                        <a href="mailto:borisemakam@gmail.com" class="interactive-element" style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-heading); font-size: 1.1rem; font-weight: 500;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--tag-bg); display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="mail" style="color: var(--text-accent);" size="20"></i>
+                            </div>
+                            borisemakam@gmail.com
+                        </a>
+                        <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-heading); font-size: 1.1rem; font-weight: 500;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--tag-bg); display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="map-pin" style="color: var(--text-accent);" size="20"></i>
+                            </div>
+                            <span id="user-location-span">Regina, Saskatchewan</span>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" style="display: flex; flex-direction: column; gap: var(--space-md);">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-md);">
+                            <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <label for="name" style="color: var(--text-secondary); font-size: 0.9rem;">Name</label>
+                                <input type="text" id="name" name="name" autocomplete="name" placeholder="John Doe" class="interactive-element" required>
+                            </div>
+                            <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <label for="email" style="color: var(--text-secondary); font-size: 0.9rem;">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" placeholder="john@example.com" class="interactive-element" required>
+                            </div>
+                        </div>
+                        <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label for="message" style="color: var(--text-secondary); font-size: 0.9rem;">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can we work together?" style="resize: vertical;" class="interactive-element" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary interactive-element" style="align-self: flex-start; margin-top: 0.5rem; padding: 0.75rem 2rem; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+                            Send Message <i data-lucide="send" size="18" style="margin-left: 0.5rem;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Boris Emakam Garcial</p>
+            <div class="footer-links">
+                <a href="https://github.com/datascientistandAI" target="_blank" rel="noreferrer" class="interactive-element">GitHub</a>
+                <a href="https://www.linkedin.com/in/boris-emakam-b77974290/" target="_blank" rel="noreferrer" class="interactive-element">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

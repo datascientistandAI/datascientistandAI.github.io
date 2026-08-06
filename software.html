@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Development | Boris Emakam Garcial</title>
+    <meta name="description" content="Django, Python, PHP, JavaScript, APIs, SQL, authentication, validation, logging, and AI-assisted document workflows — software engineering work by Boris Emakam Garcial.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Software Development | Boris Emakam Garcial">
+    <meta property="og:description" content="Django, Python, PHP, JavaScript, APIs, SQL, authentication, validation, logging, and AI-assisted document workflows.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-outline" aria-hidden="true"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="brand interactive-element">
+                <i data-lucide="terminal" style="color: var(--text-accent);"></i>
+                Boris Emakam Garcial
+            </a>
+            <div class="nav-links">
+                <a href="it-support.html" class="interactive-element">IT Support</a>
+                <a href="software.html" class="interactive-element" style="color: var(--text-accent);">Software Dev</a>
+                <a href="research.html" class="interactive-element">ML Research</a>
+                <button id="theme-toggle" class="btn btn-outline interactive-element" aria-label="Toggle Theme" style="padding: 0.5rem; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border-color); margin-left: 1rem;">
+                    <i data-lucide="sun" id="theme-icon" size="18"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 48vh; padding-top: calc(var(--space-xl) + var(--space-md));">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="animate-on-scroll stagger-1 eyebrow interactive-element">
+                        <i data-lucide="code-2" size="16"></i> Backend & Automation
+                    </div>
+                    <h1 class="animate-on-scroll stagger-2">Software Development & Automation</h1>
+                    <p class="hero-lede animate-on-scroll stagger-3" style="font-size: 1.25rem; color: var(--text-heading); max-width: 800px; line-height: 1.8; margin-bottom: 2rem;">
+                        Bridging the gap between IT support and advanced AI by building robust, auditable backend systems. Experience translating stakeholder requirements into data flows, APIs, and testable application behavior.
+                    </p>
+                    <div class="project-tags animate-on-scroll stagger-4" style="margin-bottom: var(--space-md);">
+                        <span class="tag interactive-element"><i data-lucide="layout-template" size="14"></i> Django</span>
+                        <span class="tag interactive-element"><i data-lucide="code" size="14"></i> Python</span>
+                        <span class="tag interactive-element"><i data-lucide="server" size="14"></i> PHP</span>
+                        <span class="tag interactive-element"><i data-lucide="file-json" size="14"></i> JavaScript</span>
+                        <span class="tag interactive-element"><i data-lucide="webhook" size="14"></i> APIs</span>
+                        <span class="tag interactive-element"><i data-lucide="database" size="14"></i> SQL</span>
+                        <span class="tag interactive-element"><i data-lucide="shield-check" size="14"></i> Authentication</span>
+                        <span class="tag interactive-element"><i data-lucide="activity" size="14"></i> Logging</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Featured Development Projects</h2>
+                <div class="grid-2">
+                    <div class="card project-card animate-on-scroll stagger-1 interactive-element" style="grid-column: 1 / -1; max-width: 900px; margin: 0 auto;">
+                        <h3>Design-Assist — Automated BRS/SRS Documentation</h3>
+                        <p class="eyebrow" style="color: var(--text-secondary); background: transparent; padding: 0; border: none; letter-spacing: 0;">MTN Cameroon · Software Engineering Internship</p>
+
+                        <div class="workflow-preview" aria-label="Requirements flow through extraction and validation to document export">
+                            <span><i data-lucide="clipboard-list" size="20"></i> Requirements</span><i data-lucide="arrow-right" size="18"></i><span><i data-lucide="scan-text" size="20"></i> Extract</span><i data-lucide="arrow-right" size="18"></i><span><i data-lucide="shield-check" size="20"></i> Validate</span><i data-lucide="arrow-right" size="18"></i><span><i data-lucide="file-output" size="20"></i> Export</span>
+                        </div>
+
+                        <div class="project-case-study" style="margin-top: var(--space-sm);">
+                            <div class="grid-2" style="gap: var(--space-md);">
+                                <div>
+                                    <h4><i data-lucide="circle-help" size="18"></i> Challenge</h4>
+                                    <p>Built a Django application that turns raw business requirements into structured Business/Software Requirements documents (BRS/SRS) — upload requirements, extract the relevant content, generate structured sections, then validate and organize them before export.</p>
+
+                                    <h4><i data-lucide="cpu" size="18"></i> Solution</h4>
+                                    <p>Owned backend development in Django — views, templates, data flow, and application logic — integrated with Azure Document Intelligence for extraction and a prompt-assembly layer that turns extracted content into structured requirement sections.</p>
+                                </div>
+                                <div>
+                                    <h4><i data-lucide="chart-no-axes-combined" size="18"></i> Outcome</h4>
+                                    <p>Implemented authentication with login/logout tracking, activity logging for auditability, requirement validation, and one-click export to Word and PDF.</p>
+
+                                    <h4><i data-lucide="bug" size="18"></i> Engineering Practice</h4>
+                                    <p>The hardest part was reliably turning unstructured requirements into structured BRS/SRS output — I traced inputs through extraction, prompt assembly, and generation to isolate where the pipeline broke, rather than trusting generated output at face value. Also produced UML diagrams and technical documentation for the system.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Azure Document Intelligence</span>
+                            <span class="tag">APIs</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">UML</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="https://github.com/datascientistandAI/design-assist" target="_blank" rel="noreferrer" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i data-lucide="github" size="16"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card project-card animate-on-scroll stagger-2 interactive-element" style="grid-column: 1 / -1; max-width: 900px; margin: 0 auto;">
+                        <h3>Archeo-IT Web & Infrastructure Project</h3>
+                        <p class="eyebrow" style="color: var(--text-secondary); background: transparent; padding: 0; border: none; letter-spacing: 0;">Web Development & Server Administration</p>
+
+                        <div class="project-case-study" style="margin-top: var(--space-sm);">
+                            <div class="grid-2" style="gap: var(--space-md);">
+                                <div>
+                                    <h4><i data-lucide="file-text" size="18"></i> The Work</h4>
+                                    <p>A PHP/MySQL web project paired with the server infrastructure it runs on — built and administered end-to-end rather than deployed onto someone else's stack.</p>
+                                </div>
+                                <div>
+                                    <h4><i data-lucide="server" size="18"></i> Infrastructure</h4>
+                                    <p>Configured Linux servers, Apache, routing, and firewall rules, using VirtualBox for a reproducible environment, with Python scripting for supporting tasks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Apache</span>
+                            <span class="tag">Networking</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="ai-verification" class="ai-section">
+            <div class="container">
+                <div class="eyebrow animate-on-scroll"><i data-lucide="check-square"></i> Engineering Standards</div>
+                <h2 class="animate-on-scroll">AI-Assisted Engineering & Verification</h2>
+                <p class="animate-on-scroll" style="margin-bottom: var(--space-lg); max-width: 800px; font-size: 1.2rem; color: var(--text-heading);">
+                    I use AI-assisted tools to accelerate technical work, but I independently validate outputs, test implementations, document decisions, and identify failure modes.
+                </p>
+
+                <div class="grid-2">
+                    <div class="card animate-on-scroll stagger-1 interactive-element">
+                        <div class="card-icon">
+                            <i data-lucide="zap" size="28"></i>
+                        </div>
+                        <h3>Tooling & Acceleration</h3>
+                        <p>Use AI-assisted development tools for code exploration, implementation acceleration, debugging hypotheses, documentation, and test-case generation.</p>
+                    </div>
+
+                    <div class="card animate-on-scroll stagger-2 interactive-element">
+                        <div class="card-icon">
+                            <i data-lucide="search" size="28"></i>
+                        </div>
+                        <h3>Independent Verification</h3>
+                        <p>Independently verify generated code through requirements analysis, manual review, testing, security checks, data-flow inspection, and failure-mode analysis.</p>
+                    </div>
+
+                    <div class="card animate-on-scroll stagger-3 interactive-element">
+                        <div class="card-icon">
+                            <i data-lucide="lock" size="28"></i>
+                        </div>
+                        <h3>Auditable Workflows</h3>
+                        <p>Built AI-enabled document workflows with human validation, logging, authentication, and auditable outputs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Boris Emakam Garcial</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

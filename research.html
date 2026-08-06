@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Research | Boris Emakam Garcial</title>
+    <meta name="description" content="Time-series ML, LightGBM, Transformers, reinforcement learning, leakage controls, and trading algorithm research by Boris Emakam Garcial.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ML Research | Boris Emakam Garcial">
+    <meta property="og:description" content="Time-series ML, LightGBM, Transformers, reinforcement learning, leakage controls, and trading algorithm research.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-outline" aria-hidden="true"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="brand interactive-element">
+                <i data-lucide="terminal" style="color: var(--text-accent);"></i>
+                Boris Emakam Garcial
+            </a>
+            <div class="nav-links">
+                <a href="it-support.html" class="interactive-element">IT Support</a>
+                <a href="software.html" class="interactive-element">Software Dev</a>
+                <a href="research.html" class="interactive-element" style="color: var(--text-accent);">ML Research</a>
+                <button id="theme-toggle" class="btn btn-outline interactive-element" aria-label="Toggle Theme" style="padding: 0.5rem; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border-color); margin-left: 1rem;">
+                    <i data-lucide="sun" id="theme-icon" size="18"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 48vh; padding-top: calc(var(--space-xl) + var(--space-md));">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="animate-on-scroll stagger-1 eyebrow interactive-element">
+                        <i data-lucide="microscope" size="16"></i> Advanced Exploration
+                    </div>
+                    <h1 class="animate-on-scroll stagger-2">Time-Series & Machine Learning Research</h1>
+                    <p class="hero-lede animate-on-scroll stagger-3" style="font-size: 1.25rem; color: var(--text-heading); max-width: 800px; line-height: 1.8; margin-bottom: 2rem;">
+                        Beyond application support and software engineering, I conduct independent research into complex ML systems, time-series forecasting, and trading algorithms. Evaluating machine-learning systems using leakage controls, time-based validation, class-performance analysis, and business-impact metrics.
+                    </p>
+                    <div class="project-tags animate-on-scroll stagger-4" style="margin-bottom: var(--space-md);">
+                        <span class="tag interactive-element">Time-Series ML</span>
+                        <span class="tag interactive-element">LightGBM</span>
+                        <span class="tag interactive-element">Transformers</span>
+                        <span class="tag interactive-element">Reinforcement Learning</span>
+                        <span class="tag interactive-element">Regime Analysis</span>
+                        <span class="tag interactive-element">Leakage Controls</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <div class="grid-2">
+                    
+                    <!-- CARD 1 -->
+                    <div class="card project-card animate-on-scroll stagger-1 interactive-element" style="grid-column: 1 / -1; max-width: 1000px; margin: 0 auto;">
+                        <img src="assets/comparison.png" class="real-chart-image" alt="R-Tokenizer Regime Validation Chart" />
+                        <h3>R-Tokenizer Regime Validation</h3>
+                        <p class="eyebrow" style="color: var(--text-secondary); background: transparent; padding: 0; border: none; letter-spacing: 0; line-height: 1.4;">A learned market-state representation validated against two regime-detection baselines.</p>
+                        
+                        <div class="project-case-study" style="margin-top: var(--space-sm);">
+                            <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 0;">A learned market-state representation validated against two regime-detection baselines on synthetic positive-control data. Description + results only — no code.</p>
+                        </div>
+
+                        <div class="project-tags" style="margin-top: var(--space-md);">
+                            <span class="tag interactive-element">Regime Detection</span>
+                            <span class="tag interactive-element">Validation</span>
+                            <span class="tag interactive-element">Market State</span>
+                        </div>
+
+                        <div class="card-actions" style="margin-top: var(--space-md);">
+                            <a href="https://github.com/datascientistandAI/r-tokenizer-regime-validation" target="_blank" class="btn btn-outline interactive-element" style="padding: 0.75rem 1.5rem; font-size: 1rem;">
+                                <i data-lucide="github" size="18"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="card project-card animate-on-scroll stagger-2 interactive-element" style="grid-column: 1 / -1; max-width: 1000px; margin: 0 auto; margin-top: var(--space-lg);">
+                        <img src="assets/gradient-resurrection-controller.svg" class="large-card-image" alt="Continual Learning Controller Diagram" />
+                        <h3>Continual Learning Controller</h3>
+                        <p class="eyebrow" style="color: var(--text-secondary); background: transparent; padding: 0; border: none; letter-spacing: 0; line-height: 1.4;">Gradient resurrection: a theoretically-derived, trust-scaled controller for continual learning.</p>
+                        
+                        <div class="project-case-study" style="margin-top: var(--space-sm);">
+                            <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 0;">Gradient resurrection: a theoretically-derived, trust-scaled controller for continual learning, with full proof and an honestly-reported failed extension hypothesis.</p>
+                        </div>
+
+                        <div class="project-tags" style="margin-top: var(--space-md);">
+                            <span class="tag interactive-element">Continual Learning</span>
+                            <span class="tag interactive-element">Theory & Proof</span>
+                            <span class="tag interactive-element">Machine Learning</span>
+                        </div>
+
+                        <div class="card-actions" style="margin-top: var(--space-md);">
+                            <a href="https://github.com/datascientistandAI/continual-learning-controller" target="_blank" class="btn btn-outline interactive-element" style="padding: 0.75rem 1.5rem; font-size: 1rem;">
+                                <i data-lucide="github" size="18"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="card project-card animate-on-scroll stagger-3 interactive-element" style="grid-column: 1 / -1; max-width: 1000px; margin: 0 auto; margin-top: var(--space-lg);">
+                        <img src="assets/film-bpc-v8.svg" class="large-card-image" alt="FILM-BPC Macro Trader Diagram" />
+                        <h3>FILM-BPC Macro Trader V8</h3>
+                        <p class="eyebrow" style="color: var(--text-secondary); background: transparent; padding: 0; border: none; letter-spacing: 0; line-height: 1.4;">World-model architecture for FX trading — forecasting and decision logic kept fully separate and auditable.</p>
+                        
+                        <div class="project-case-study" style="margin-top: var(--space-sm);">
+                            <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 0;">A trading system built around the idea that a policy should be inspectable, not a black box. A forecasting head predicts five quantile price paths (not a single point estimate) over a 40-step horizon; a zero-learned-parameter module then deterministically computes trade outcomes from that forecast, so the "what happens if this trade is taken" logic is fully separate from — and auditable independent of — the model that's actually learning. Regime state is discovered via HMM and cross-checked against a separate rule-based validation layer before being trusted operationally. Validated across 279 walk-forward folds on 2019-2026 FX data, benchmarked against random, heuristic, classic technical, and standard ML baselines — including a "cheating" oracle baseline — to establish what a real edge looks like versus chance.</p>
+                        </div>
+
+                        <div class="project-tags" style="margin-top: var(--space-md);">
+                            <span class="tag interactive-element">PyTorch</span>
+                            <span class="tag interactive-element">Time-Series Forecasting</span>
+                            <span class="tag interactive-element">Quantile Regression</span>
+                            <span class="tag interactive-element">HMM</span>
+                            <span class="tag interactive-element">Walk-Forward Validation</span>
+                        </div>
+                        
+                        <div class="card-actions" style="margin-top: var(--space-md);">
+                            <a href="https://github.com/datascientistandAI/film-bpc-macro-trader" target="_blank" class="btn btn-primary interactive-element" style="padding: 0.75rem 1.5rem; font-size: 1rem;">
+                                <i data-lucide="github" size="18"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="card project-card animate-on-scroll stagger-4 interactive-element" style="grid-column: 1 / -1; max-width: 1000px; margin: 0 auto; margin-top: var(--space-lg);">
+                        <img src="assets/trading-data-plane.svg" class="large-card-image" alt="Trading Data Plane Diagram" />
+                        <h3>Trading Data Plane</h3>
+                        <p class="eyebrow" style="color: var(--text-secondary); background: transparent; padding: 0; border: none; letter-spacing: 0; line-height: 1.4;">Production-grade, point-in-time-correct market data infrastructure for FX.</p>
+                        
+                        <div class="project-case-study" style="margin-top: var(--space-sm);">
+                            <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 0;">Six concurrent workers (price, macro, news, sentiment, positioning, event calendar) feed a unified DuckDB feature store, gated by five automated validation checks — coverage, point-in-time correctness, schema stability, replay parity, and resilience — before any snapshot is trusted for training. Every value carries an "available_at" timestamp, so nothing is queryable before it was actually knowable at that point in time, eliminating an entire class of lookahead bugs common in backtested trading systems.</p>
+                        </div>
+
+                        <div class="project-tags" style="margin-top: var(--space-md);">
+                            <span class="tag interactive-element">Python</span>
+                            <span class="tag interactive-element">DuckDB</span>
+                            <span class="tag interactive-element">Data Engineering</span>
+                            <span class="tag interactive-element">ETL</span>
+                            <span class="tag interactive-element">Data Quality</span>
+                        </div>
+
+                        <div class="card-actions" style="margin-top: var(--space-md);">
+                            <a href="https://github.com/datascientistandAI/trading-data-plane" target="_blank" class="btn btn-outline interactive-element" style="padding: 0.75rem 1.5rem; font-size: 1rem;">
+                                <i data-lucide="github" size="18"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" style="padding-top: 0;">
+            <div class="container">
+                <div style="margin-bottom: var(--space-md);">
+                    <h2 class="animate-on-scroll stagger-1" style="font-size: 2rem;">Early Foundational Projects</h2>
+                    <p class="animate-on-scroll stagger-2" style="color: var(--text-secondary); margin-bottom: 2rem;">Core algorithms and ML theory implemented from scratch.</p>
+                </div>
+                
+                <div class="grid-3">
+                    <!-- RL -->
+                    <div class="card project-card animate-on-scroll stagger-3 interactive-element">
+                        <img src="assets/project_rl.jpg" alt="Reinforcement Learning" class="card-image" />
+                        <h4 style="margin-bottom: var(--space-xs); font-size: 1.1rem; color: var(--text-heading);">Reinforcement Learning</h4>
+                        <p style="font-size: 0.9rem; flex-grow: 1;">TensorFlow/Keras implementation of Double Dueling DQN for trading signal generation and Atari gameplay.</p>
+                        <a href="https://github.com/datascientistandAI/Reinforcement-Learning" target="_blank" class="btn btn-outline interactive-element" style="padding: 0.4rem 1rem; font-size: 0.85rem; width: 100%; margin-top: var(--space-xs);">
+                            <i data-lucide="github" size="14"></i> View Repository
+                        </a>
+                    </div>
+                    <!-- Custom NN -->
+                    <div class="card project-card animate-on-scroll stagger-4 interactive-element">
+                        <img src="assets/project_cnn.jpg" alt="Custom Neural Networks" class="card-image" />
+                        <h4 style="margin-bottom: var(--space-xs); font-size: 1.1rem; color: var(--text-heading);">Custom Neural Networks</h4>
+                        <p style="font-size: 0.9rem; flex-grow: 1;">Built custom model architectures, activation functions, and training loops from the ground up.</p>
+                        <a href="https://github.com/datascientistandAI/Custom-Neural-networks" target="_blank" class="btn btn-outline interactive-element" style="padding: 0.4rem 1rem; font-size: 0.85rem; width: 100%; margin-top: var(--space-xs);">
+                            <i data-lucide="github" size="14"></i> View Repository
+                        </a>
+                    </div>
+                    <!-- Regression -->
+                    <div class="card project-card animate-on-scroll stagger-5 interactive-element">
+                        <img src="assets/project_svm.jpg" alt="Regression and SVM" class="card-image" />
+                        <h4 style="margin-bottom: var(--space-xs); font-size: 1.1rem; color: var(--text-heading);">Regression & SVM</h4>
+                        <p style="font-size: 0.9rem; flex-grow: 1;">Linear regression, Support Vector Machines, and decision tree theory implemented on synthetic data.</p>
+                        <a href="https://github.com/datascientistandAI/Understanding-regression" target="_blank" class="btn btn-outline interactive-element" style="padding: 0.4rem 1rem; font-size: 0.85rem; width: 100%; margin-top: var(--space-xs);">
+                            <i data-lucide="github" size="14"></i> View Repository
+                        </a>
+                    </div>
+                    <!-- PCA -->
+                    <div class="card project-card animate-on-scroll stagger-1 interactive-element">
+                        <img src="assets/project_pca.jpg" alt="Dimensionality Reduction" class="card-image" />
+                        <h4 style="margin-bottom: var(--space-xs); font-size: 1.1rem; color: var(--text-heading);">Dimensionality (PCA)</h4>
+                        <p style="font-size: 0.9rem; flex-grow: 1;">Dimensionality reduction built from scratch using Principal Component Analysis via SVD.</p>
+                        <a href="https://github.com/datascientistandAI/Dimensionality" target="_blank" class="btn btn-outline interactive-element" style="padding: 0.4rem 1rem; font-size: 0.85rem; width: 100%; margin-top: var(--space-xs);">
+                            <i data-lucide="github" size="14"></i> View Repository
+                        </a>
+                    </div>
+                    <!-- Ensemble -->
+                    <div class="card project-card animate-on-scroll stagger-2 interactive-element">
+                        <img src="assets/project_ensemble.jpg" alt="Ensemble Learning" class="card-image" />
+                        <h4 style="margin-bottom: var(--space-xs); font-size: 1.1rem; color: var(--text-heading);">Ensemble Learning</h4>
+                        <p style="font-size: 0.9rem; flex-grow: 1;">Classification and regression using bagging, boosting, and stacking methodologies.</p>
+                        <a href="https://github.com/datascientistandAI/datascientistandAI-Ensemble-learning-ML" target="_blank" class="btn btn-outline interactive-element" style="padding: 0.4rem 1rem; font-size: 0.85rem; width: 100%; margin-top: var(--space-xs);">
+                            <i data-lucide="github" size="14"></i> View Repository
+                        </a>
+                    </div>
+                    <!-- MNIST -->
+                    <div class="card project-card animate-on-scroll stagger-3 interactive-element">
+                        <img src="assets/project_mnist.jpg" alt="MNIST Classification" class="card-image" />
+                        <h4 style="margin-bottom: var(--space-xs); font-size: 1.1rem; color: var(--text-heading);">MNIST Classification</h4>
+                        <p style="font-size: 0.9rem; flex-grow: 1;">Handwritten digit classification using SGD and k-NN, complete with deep error analysis.</p>
+                        <a href="https://github.com/datascientistandAI/MNIST-Classification" target="_blank" class="btn btn-outline interactive-element" style="padding: 0.4rem 1rem; font-size: 0.85rem; width: 100%; margin-top: var(--space-xs);">
+                            <i data-lucide="github" size="14"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Boris Emakam Garcial</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
